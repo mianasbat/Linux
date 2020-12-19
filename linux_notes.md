@@ -43,7 +43,92 @@
    ```
    rm
    ```
+1. To see the manual of a command
+   ```
+   man
+   ```
+1. To see the first five lines of a file
+   ```
+   head
+   ```
+1. To see the last five lines of a file
+   ```
+   tail 
+   ```
+1. To see the contents of a file
+   ```
+   less or more
+   ```
+1. To find the location of application binary
+   ```
+   which
+   ```
+1. To change permission of the file
+   ```
+   chmod
+   ```
+1. To change owner of the file
+   ```
+   chown
+   ```
+1. To check the commands history
+   ```
+   history
+   ```
+1. To clear the screen
+   ```
+   clear
+   ```
 1. 
+   ```
+   logout or exit
+   ```
+1. 
+   ```
+   sudo
+   ```
+1. 
+   ```
+   su
+   ```
+1. To count the words of a file
+   ```
+   wc
+   ```
+1. To sort a list 
+   ```
+   sort
+   ```
+1.  
+   ```
+   ssh
+   ```
+1. 
+   ```
+   ssh-keygen
+   ```
+1. 
+   ```
+   scp
+   ```
+1. 
+   ```
+   rsync
+   ```
+1. 
+   ```
+   source, export
+   ```
+1. To create link or shortcut
+   ```
+   ln
+   ```
+1. To make the computer sleep
+   ```
+   sleep
+   ```
+1. 
+
 
 
 
