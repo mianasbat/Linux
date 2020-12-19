@@ -213,6 +213,15 @@
 1. To count the words, lines and characters of a file
    ```
    wc
+   # To count the number of lines in a file
+   wc -l file.txt
+   # To count the number of words in a file
+   wc -w file.txt
+   # To count the number of characters in a file
+   wc -c file.txt
+   # To count lines, words and characters
+   wc -clw file.txt
+   
    ```
 1. To sort files.  
    ```
@@ -231,10 +240,10 @@
    ssh username@remote_computer.ucl.ac.uk
    # To enable X11 window system
    ssh -Y username@remote_computer.ucl.ac.uk
-      # This command should not be empty
-      echo $DISPLAY
-      # run xclock on remote computer and see it on your own monitor
-      xclock
+   # This command should not be empty
+   echo $DISPLAY
+   # run xclock on remote computer and see it on your own monitor
+   xclock
    # To run a command on remote computer without loggin in
    ssh -Y username@remote_computer.ucl.ac.uk "ls -ali"
    ```
@@ -263,17 +272,36 @@
    ```
    rsync
    ```
+1. To list the contents of directory visually
+   ```
+   tree 
+   # To list current directory contents
+   tree .
+   # To list /etc/ directory contents
+   tree /etc
+   # To add colour in output
+   tree -C /etc
+   # To show only directories
+   tree -d /etc/
+   ```
 1. 
    ```
    source, export
    ```
-1. To create link or shortcut
+1. To create link of file in another location
    ```
    ln
+   # To create a soft link of file in current directory
+   ln -s /path/to/target/file mylinkfile
+
+   # To create a hard link
+   ln /path/to/target/file mylinkfile
    ```
-1. To make the computer sleep
+1. To take for specific time in seconds
    ```
    sleep
+   # To pause for 5 second
+   sleep 5
    ```
 1. To check the size of directory or file
    ```
