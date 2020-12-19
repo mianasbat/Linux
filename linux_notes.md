@@ -127,18 +127,49 @@
 1. To see the contents of a file
    ```
    less or more
+   # To see one screen of output at a time
+   less apple.txt
+   # To enable horizontal scrolling 
+   less -S apple.txt
+   # To see one screen a zip file
+   zless apple.txt.gz 
    ```
 1. To find the location of application binary
    ```
    which
+   # To see where is ls binary located
+   which less
+   # To see where is python binary located
+   which python
    ```
 1. To change permission of the file
    ```
    chmod
+   # Make executable for you only
+   chmod u+x myfile
+   # Add read write execute permissions for the group
+   chmod g+rxw myfile
+   # Remove write execute permissions for the group
+   # and for everyone else (excluding you, the user)
+   chmod go-wx myfile
+   # Remove all permissions for you, the group,
+	# and the rest of the world
+   chmod a-rwx myfile
+   # Revoke all permissions (---------)
+   chmod 000 myfile
+   # Grant all permissions (rwxrwxrwx)
+   chmod 777 myfile
+   # Reserve write access for the user,
+   # but grant all other permissions (rwxr-xr-x)
+   chmod 755 myfile          
    ```
 1. To change owner of the file
    ```
    chown
+   # To change the owner of the file to ec2-user
+   chown ec2-user myfile
+   # To change the owner and group of a file
+   chown someuser:somegroup myfile
    ```
 1. To check the commands history
    ```

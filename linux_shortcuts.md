@@ -1,0 +1,5 @@
+# Linux shortcuts
+
+```
+whoami
+```
