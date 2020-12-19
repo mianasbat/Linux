@@ -190,29 +190,70 @@
    ```
    logout or exit
    ```
-1. 
+1. To run a command as a super user
    ```
    sudo
+   # To create a directory in root /
+   sudo mkdir /bkup
+   # To become super user for some time
+      sudo -i
+      #check who are you now
+      whoami
+      # To become your own user
+      exit
+      # Now check again who are you
+      whoami
    ```
-1. 
+1. To switch the user
    ```
    su
+   # To become another user (john) for whome you know the password
+   su john
    ```
-1. To count the words of a file
+1. To count the words, lines and characters of a file
    ```
    wc
    ```
-1. To sort a list 
+1. To sort files.  
    ```
    sort
+   # To sort a file
+   sort file.txt
+   # To sort numberically
+   sort -n file.txt
+   # To sort uniquely
+   sort -u file.txt
    ```
-1.  
+1.  To connect to a remote computer securely. It uses port 22.
    ```
    ssh
+   # To connect to a remote computer
+   ssh username@remote_computer.ucl.ac.uk
+   # To enable X11 window system
+   ssh -Y username@remote_computer.ucl.ac.uk
+      # This command should not be empty
+      echo $DISPLAY
+      # run xclock on remote computer and see it on your own monitor
+      xclock
+   # To run a command on remote computer without loggin in
+   ssh -Y username@remote_computer.ucl.ac.uk "ls -ali"
    ```
-1. 
+1. To generate a public and private key for secure communication.
    ```
    ssh-keygen
+   # The keys are usually created in ~/.ssh
+   # Create .ssh directory if it doesnt exist
+   mkdir -p ~/.ssh
+   # Get into .ssh directory
+   cd ~/.ssh
+   # Now run the command to generate the keys `localkey` (private key) and `localkey.pub` (public key)   
+   ssh-key-gen -t rsa -b 4096 -f localkey
+   ```
+1. To copy your public key to remote computer for keyless entry next time
+   ```
+   ssh-copy-id
+   # To send public key to remote_computer
+   ssh-copy-id -i username@remote_computer.ucl.ac.uk
    ```
 1. 
    ```
