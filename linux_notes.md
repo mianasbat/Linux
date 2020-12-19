@@ -264,13 +264,23 @@
    # To send public key to remote_computer
    ssh-copy-id -i username@remote_computer.ucl.ac.uk
    ```
-1. 
+1. If you have ssh connection to remote computer, you can use scp to transfer to/from remote computer.
    ```
    scp
+   # To transfer data from remote computer to your computer. Run this command on local computer
+   scp username@host:/some/path/on/remote/machine /some/path/on/my/machine
+   # To transfer data to remote computer from your computer. Run this command on local computer
+   scp /some/path/on/my/machine username@host:/some/path/on/remote/machine
    ```
-1. 
+1. If you have ssh connection to remote computer, you can use rsync to transfer to/from remote computer.
    ```
    rsync
+   # To copy files from a remote computer to local computer
+   rsync -chavP username@host:/some/path/on/remote/machine /some/path/on/my/machine/
+   # To copy files from a local computer to remote computer
+   rsync -chavP /some/path/on/my/machine username@host:/some/path/on/remote/machine/
+   # It can also be used to sync two directories on your local machine
+   rsync directory1 directory2
    ```
 1. To list the contents of directory visually
    ```
@@ -284,9 +294,14 @@
    # To show only directories
    tree -d /etc/
    ```
-1. 
+1. To export a variable and source to make the effect immidiately. 
    ```
    source, export
+   # To export a variable with value 54
+   export myvariable=54
+   echo $myvariable
+   # To make the changes effect take place immidiately.
+   source ~/.bash_profile
    ```
 1. To create link of file in another location
    ```
