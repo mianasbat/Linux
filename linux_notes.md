@@ -233,7 +233,7 @@
    # To sort uniquely
    sort -u file.txt
    ```
-1.  To connect to a remote computer securely. It uses port 22.
+1. To connect to a remote computer securely. It uses port 22.
    ```
    ssh
    # To connect to a remote computer
