@@ -336,8 +336,122 @@
    # To make the sizes human readable
    df -h
    ```
-
-
+1. To keep the process running on ssh
+   ```
+   nohup
+   ```
+1. To count the time of execution
+   ```
+   tiime
+   ```
+1. To get columns from the file
+   ```
+   cut
+   ```
+1. 
+   ```
+   awk
+   ```
+1. 
+   ```
+   sed
+   ```
+1. 
+   ```
+   date, cal
+   ```
+1. 
+   ```
+   tar
+   ```
+1. 
+   ```
+   uniq
+   ```
+1. 
+   ```
+   uname
+   ```
+1. 
+   ```
+   alias, unalias
+   ```
+1. 
+   ```
+   find
+   ```
+1. 
+   ```
+   touch
+   ```
+1. 
+   ```
+   diff, comm
+   ```
+1. To keep multiple sessions in ssh connection
+   ```
+   screen
+   ```
+1. To keep multiple sessions in ssh connection
+   ```
+   tmux
+   ```
+1. 
+   ```
+   whoami
+   ```
+1. 
+   ```
+   groups
+   ```
+1. 
+   ```
+   who, w
+   ```
+1. 
+   ```
+   hostname
+   ```
+1. 
+   ```
+   finger
+   ```
+1. 
+   ```
+   tee
+   ```
+1. 
+   ```
+   crontab
+   ```
+1. 
+   ```
+   apropos
+   ```
+1. 
+   ```
+   mount
+   ```
+1. 
+   ```
+   watch
+   ```
+1. To check the status of remote computer
+   ```
+   ping
+   ```
+1. 
+   ```
+   dig
+   ```
+1. to check the network card details and IP address
+   ```
+   ifconfig
+   ```
+1. curl
+   ```
+   To download and browse from commandline
+   ```
 
 
 ## References:
