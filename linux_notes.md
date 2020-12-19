@@ -186,7 +186,7 @@
    # To clear the screen/terminal
    clear
    ```
-1. 
+1. To logout or exit an environment.
    ```
    logout or exit
    ```
