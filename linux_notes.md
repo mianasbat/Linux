@@ -174,9 +174,16 @@
 1. To check the commands history
    ```
    history
+
+   # To see the history commands
+   history
+   # To clear the history
+   history -c
    ```
 1. To clear the screen
    ```
+   clear
+   # To clear the screen/terminal
    clear
    ```
 1. 
@@ -227,11 +234,24 @@
    ```
    sleep
    ```
-1. To check the disk size
+1. To check the size of directory or file
    ```
    du
+   # To check the size of dir1
+   du dir1
+   # To read the sizes human friendly
+   du -sh dir1
+   # To check the sizes of everything in a directory
+   du -sh *
    ```
-1. 
+1. To check the disk space and details
+   ```
+   df
+   # To check how much space is used and left
+   df
+   # To make the sizes human readable
+   df -h
+   ```
 
 
 
