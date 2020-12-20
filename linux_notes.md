@@ -336,45 +336,92 @@
    # To make the sizes human readable
    df -h
    ```
-1. To keep the process running on ssh
+1. To keep the connection active on ssh
    ```
    nohup
+   # To keep a job running even if you close the window
+   nohup python
    ```
-1. To count the time of execution
+1. To count the time of execution of a script/process
    ```
-   tiime
+   time
+   # To count how long a command took
+   time sleep 5
+   # To count how much copying took
+   time cp apple.mov /home/username/
    ```
-1. To get columns from the file
+1. To get one or more columns from the delimited file
    ```
    cut
+   # To get column 2 from the file
+   cut -f2 -d"," file.txt
+
    ```
-1. 
+1. For text manipulating
    ```
    awk
+   # To print column 1 
+   awk '{ print $1}' file.txt
    ```
-1. 
+1. For text manipulating
    ```
    sed
+   # To ignore first line of the column and show remaining.
+   cat file.txt | sed '1d'
    ```
-1. 
+1. To get current date and time
    ```
-   date, cal
+   date
+   # To get only date time
+   date
+   # To get only the date part 
+   date "+%y%m%d'
    ```
-1. 
+1. To get the calendar
+   ```
+   cal
+   # To get the month calendar
+   cal
+   # To get for year
+   cal -y
+   # To get specific month
+   cal 12 2021
+   ```
+1. To compress and uncompress a file
    ```
    tar
+   # To compress a directory
+   tar -cvf dir.tar dir
+   # To compress and zip a directory
+   tar -zcvf dir.tar dir
+   # To uncompress a directory
+   tar -xvf dir.tar
+   # To uncompress a zip and tar directory
+   tar -zxvf dir.tar
    ```
-1. 
+1. To find uniq lines in a file
    ```
    uniq
+   # To find unique lines in a file
+   uniq file.txt
    ```
-1. 
+1. To get various system information.
    ```
    uname
+   # To get operating system
+   uname
+   # To get all information
+   uname -a
    ```
-1. 
+1. alias can map one word to another, usually used for shortcuts
    ```
    alias, unalias
+   # To set shortcut for copy recursively
+   alias cp="cp -R"
+   # To set shortcut for mkdir
+   alias mkdir="mkdir -p"
+   # To get rid of an alias
+   unalias cp
    ```
 1. 
    ```
