@@ -449,9 +449,17 @@
    # To create a file apple.txt
    touch apple.txt
    ```
-1. 
+1. It is used to show differences between two files.
    ```
-   diff, comm
+   diff 
+   # To show differnce between two files
+   diff file1.txt file2.txt
+   ```
+1. This command is used to show commonalities in files.
+   ```
+   comm
+   # To show common between two files
+   comm file1.txt file2.txt
    ```
 1. To keep multiple sessions in ssh connection
    ```
