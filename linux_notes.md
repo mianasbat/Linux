@@ -423,13 +423,31 @@
    # To get rid of an alias
    unalias cp
    ```
-1. 
+1. To find for files and directories in the computer
    ```
    find
+   # To find makedev in /sbin
+   find /sbin -name makedev
+   # To find cases insensitive in the above command
+   find /sbin -iname makedev
+   # To find any files ending with v
+   find /bin -name *v
+   # To find files that are older than 10 days and newer than 15 days
+   find . -mtime +10 -mtime -13
+   # find and run ls command on it
+   find . -name s* ls
+   # find files that are 1MB or greater
+   find . -size +1M G K
+   # find everything in current directly and execute file on it
+   find . -exec file{}\; 
+   # To suppress warning in search
+   find / -type file -name file.txt 2>/dev/null
    ```
-1. 
+1. To create an empty file
    ```
    touch
+   # To create a file apple.txt
+   touch apple.txt
    ```
 1. 
    ```
@@ -443,7 +461,7 @@
    ```
    tmux
    ```
-1. 
+1. To find your username
    ```
    whoami
    ```
