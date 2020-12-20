@@ -473,81 +473,57 @@
    ```
    whoami
    ```
-1. To see what groups a user belong to
+1. 
    ```
    groups
-   # To see which groups the logged in user belong to
-   groups
    ```
-1. To see the logged in users on that computer.
+1. 
    ```
    who, w
-   # Just run the command to see who are logged in 
-   who
-   # Just run the command to see who are logged in 
-   w
    ```
-1. To find the host name of the computer
+1. 
    ```
    hostname
-   # To check the hostname of computer, run command
-   hostname
    ```
-1. To see information about the user.
+1. 
    ```
    finger
-   # To see information about the current user
-   finger $(whoami)
    ```
-1. To schedule any process.
+1. 
+   ```
+   tee
+   ```
+1. 
    ```
    crontab
-   # To run a process every week at 12 midnight
-      # First start the crontab program
-      crontab -i
-      # Now add the line for the job to run
-      0 0 * * * cp -R /home /backup
-      # For setting schedule time visit the website
-      [https://crontab.guru/](https://crontab.guru/)
    ```
-1. To see the related commands
+1. 
    ```
    apropos
-   # To see related commands to grep
-   apropos grep
    ```
-1. To mount a file system
+1. 
    ```
    mount
-   # To mount a usb
-   mount /dev/sda2 /mnt
    ```
-1. To continously observe the situation
+1. 
    ```
    watch
-   # To watch the directory size when copying e.g.
-   watch du -sh
    ```
 1. To check the status of remote computer
    ```
    ping
    ```
-1. To find the DNS name or IP address
+1. 
    ```
    dig
-   # To find the ip address of yahoo.com
-   dig www.yahoo.com
    ```
-1. To check the network card details and IP address
+1. to check the network card details and IP address
    ```
    ifconfig
-   # To check the ip addresses of the system
-   ifconfig | grep inet
    ```
 1. curl
    ```
-   To download and check the code of webpage from commandline
-   
+   To download and browse from commandline
    ```
 
 
