@@ -25,10 +25,14 @@
    ls -l
    # To show hidden contents of the directory
    ls -a
+   # To seperate directories, files and binaries
+   ls -F
    # To show human readable size of items
    ls -lh
    # To show item sorted by time, oldest at the bottom.
    ls -lt ~/Desktop
+   # To show item sorted by time, newest at the bottom.
+   ls -ltr ~/Desktop
    # To show all the text files
    ls *.txt
    ```
@@ -462,10 +466,33 @@
 1. To keep multiple sessions in ssh connection
    ```
    screen
+   # To keep the process running in the background
+   screen
+      # Now to run a process
+      ping google.com
+      # Now to move it to background
+      Ctrl + a
+      d
+      # Now close the window if you like and ssh again and type the command to connect to that command again
+      screen -dr
    ```
-1. To keep multiple sessions in ssh connection
+1. How to split window into multiple
    ```
    tmux
+   # To use tmux, you need to install it first
+   yum install tmux -y
+   # To start the session type command
+   tmux
+   # To split the screen into two vertically
+   ctrl+b %
+   # To split the screen horizontally
+   ctrl+b "
+   # To switch between windows.
+   # Remember windows are numbers from left to right and top to bottom.
+   press window number + o
+   To finish 
+
+
    ```
 1. To find your username
    ```
@@ -544,14 +571,14 @@
    # To check the ip addresses of the system
    ifconfig | grep inet
    ```
-1. curl
+1. To download and check the code of webpage from commandline
    ```
-   To download and check the code of webpage from commandline
-   
+   curl
    ```
 
 
 ## References:
-1. https://www.oliverelliott.org/article/computing/ref_unix/
+1. [Ref 1](https://www.oliverelliott.org/article/computing/ref_unix/)
+1. 
 
 
