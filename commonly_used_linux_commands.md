@@ -74,11 +74,11 @@
    ```
    cp 
    # To copy the file
-   cp existingfile.txt newplace.txt 
+   cp existingsample.txt newplace.txt 
    # To copy directories and files
-   cp -R dir1 dir2
+   cp -r dir1 dir2
    # To copy and check status
-   cp -Rv dir1 dir2
+   cp -rv dir1 dir2
    ```
 1. To rename a file or directory
    ```
@@ -92,13 +92,13 @@
    ```
    rm
    # To remove a file
-   rm file.txt
+   rm sample.txt
    # To remove a directory
    rm -r dir1
    # To remove a directory by force
    rm -rf dir1
    # To securely delete a file. Overwrite contents before delete
-   rm -P file.txt
+   rm -P sample.txt
    ```
 1. To see the manual of a command
    ```
@@ -110,17 +110,17 @@
    ```
    head
    # To view the first 10 lines
-   head file.txt
+   head sample.txt
    # To view the first 12 lines
-   head -12 file.txt
+   head -12 sample.txt
    ```
 1. To see the last ten lines of a file
    ```
    tail 
    # To view the last 10 lines
-   tail file.txt
+   tail sample.txt
    # To view the last 15 lines
-   tail -15 file.txt
+   tail -15 sample.txt
    ```
 1. To see the contents of a file
    ```
@@ -212,24 +212,24 @@
    ```
    wc
    # To count the number of lines in a file
-   wc -l file.txt
+   wc -l sample.txt
    # To count the number of words in a file
-   wc -w file.txt
+   wc -w sample.txt
    # To count the number of characters in a file
-   wc -c file.txt
+   wc -c sample.txt
    # To count lines, words and characters
-   wc -clw file.txt
+   wc -clw sample.txt
    
    ```
 1. To sort files.  
    ```
    sort
    # To sort a file
-   sort file.txt
+   sort sample.txt
    # To sort numberically
-   sort -n file.txt
+   sort -n sample.txt
    # To sort uniquely
-   sort -u file.txt
+   sort -u sample.txt
    ```
 1. To connect to a remote computer securely. It uses port 22.
    ```
@@ -352,20 +352,20 @@
    ```
    cut
    # To get column 2 from the file
-   cut -f2 -d"," file.txt
+   cut -f2 -d"," sample.txt
 
    ```
 1. For text manipulating
    ```
    awk
    # To print column 1 
-   awk '{ print $1}' file.txt
+   awk '{ print $1}' sample.txt
    ```
 1. For text manipulating
    ```
    sed
    # To ignore first line of the column and show remaining.
-   cat file.txt | sed '1d'
+   cat sample.txt | sed '1d'
    ```
 1. To get current date and time
    ```
@@ -401,7 +401,7 @@
    ```
    uniq
    # To find unique lines in a file
-   uniq file.txt
+   uniq sample.txt
    ```
 1. To get various system information.
    ```
@@ -439,7 +439,7 @@
    # find everything in current directly and execute file on it
    find . -exec file{}\; 
    # To suppress warning in search
-   find / -type file -name file.txt 2>/dev/null
+   find / -type file -name sample.txt 2>/dev/null
    ```
 1. To create an empty file
    ```
