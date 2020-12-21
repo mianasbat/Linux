@@ -46,8 +46,8 @@
 
    # To remove empty test directory
    rmdir test
-   # To remove directory with contents
-   rm -r /test
+   # To remove directory with contents and verbose
+   rm -rv /test
    ```
 1. To spit text
    ```
@@ -59,18 +59,16 @@
 1. To show contents of a text file
    ```
    cat
-   # To show the contents of text file apple.txt
-   cat apple.txt
+   # To show the contents of text file sample.txt
+   cat sample.txt
    # To print the line numbers on each line
-   cat -n apple.txt
-   # to view the contents of zip file
-   zcat file.txt.gz
+   cat -n sample.txt
    ```
 1. To show the contents of text file in reverse.
    ```
    tac
-   # To show the contents of text file apple.txt in reverse
-   tac apple.txt
+   # To show the contents of text file sample.txt in reverse
+   tac sample.txt
    ```
 1. To copy files/folders
    ```
@@ -128,11 +126,11 @@
    ```
    less or more
    # To see one screen of output at a time
-   less apple.txt
+   less sample.txt
    # To enable horizontal scrolling 
-   less -S apple.txt
+   less -S sample.txt
    # To see one screen a zip file
-   zless apple.txt.gz 
+   zless sample.txt.gz 
    ```
 1. To find the location of application binary
    ```
@@ -446,8 +444,8 @@
 1. To create an empty file
    ```
    touch
-   # To create a file apple.txt
-   touch apple.txt
+   # To create a file sample.txt
+   touch sample.txt
    ```
 1. It is used to show differences between two files.
    ```
