@@ -59,22 +59,22 @@
 1. To show contents of a text file
    ```
    cat
-   # To show the contents of text file sample.txt
-   cat sample.txt
+   # To show the contents of text file sampletext.txt
+   cat sampletext.txt
    # To print the line numbers on each line
-   cat -n sample.txt
+   cat -n sampletext.txt
    ```
 1. To show the contents of text file in reverse.
    ```
    tac
-   # To show the contents of text file sample.txt in reverse
-   tac sample.txt
+   # To show the contents of text file sampletext.txt in reverse
+   tac sampletext.txt
    ```
 1. To copy files/folders
    ```
    cp 
    # To copy the file
-   cp existingsample.txt newplace.txt 
+   cp existingsampletext.txt newplace.txt 
    # To copy directories and files
    cp -r dir1 dir2
    # To copy and check status
@@ -92,13 +92,13 @@
    ```
    rm
    # To remove a file
-   rm sample.txt
+   rm sampletext.txt
    # To remove a directory
    rm -r dir1
    # To remove a directory by force
    rm -rf dir1
    # To securely delete a file. Overwrite contents before delete
-   rm -P sample.txt
+   rm -P sampletext.txt
    ```
 1. To see the manual of a command
    ```
@@ -110,27 +110,27 @@
    ```
    head
    # To view the first 10 lines
-   head sample.txt
+   head sampletext.txt
    # To view the first 12 lines
-   head -12 sample.txt
+   head -12 sampletext.txt
    ```
 1. To see the last ten lines of a file
    ```
    tail 
    # To view the last 10 lines
-   tail sample.txt
+   tail sampletext.txt
    # To view the last 15 lines
-   tail -15 sample.txt
+   tail -15 sampletext.txt
    ```
 1. To see the contents of a file
    ```
    less or more
    # To see one screen of output at a time
-   less sample.txt
+   less sampletext.txt
    # To enable horizontal scrolling 
-   less -S sample.txt
+   less -S sampletext.txt
    # To see one screen a zip file
-   zless sample.txt.gz 
+   zless sampletext.txt.gz 
    ```
 1. To find the location of application binary
    ```
@@ -212,24 +212,24 @@
    ```
    wc
    # To count the number of lines in a file
-   wc -l sample.txt
+   wc -l sampletext.txt
    # To count the number of words in a file
-   wc -w sample.txt
+   wc -w sampletext.txt
    # To count the number of characters in a file
-   wc -c sample.txt
+   wc -c sampletext.txt
    # To count lines, words and characters
-   wc -clw sample.txt
+   wc -clw sampletext.txt
    
    ```
 1. To sort files.  
    ```
    sort
    # To sort a file
-   sort sample.txt
+   sort sampletext.txt
    # To sort numberically
-   sort -n sample.txt
+   sort -n samplenumbers.txt
    # To sort uniquely
-   sort -u sample.txt
+   sort -u sampletext.txt
    ```
 1. To connect to a remote computer securely. It uses port 22.
    ```
@@ -240,7 +240,7 @@
    ssh -Y username@remote_computer.ucl.ac.uk
    # This command should not be empty
    echo $DISPLAY
-   # run xclock on remote computer and see it on your own monitor
+   # Run xclock on remote computer and see it on your own monitor
    xclock
    # To run a command on remote computer without loggin in
    ssh -Y username@remote_computer.ucl.ac.uk "ls -ali"
@@ -351,21 +351,21 @@
 1. To get one or more columns from the delimited file
    ```
    cut
-   # To get column 2 from the file
-   cut -f2 -d"," sample.txt
+   # To get column 2 from the file, delimeter is space 
+   cut -f2 -d" " sampletext.txt
 
    ```
 1. For text manipulating
    ```
    awk
    # To print column 1 
-   awk '{ print $1}' sample.txt
+   awk '{ print $1}' sampletext.txt
    ```
 1. For text manipulating
    ```
    sed
    # To ignore first line of the column and show remaining.
-   cat sample.txt | sed '1d'
+   cat sampletext.txt | sed '1d'
    ```
 1. To get current date and time
    ```
@@ -373,7 +373,7 @@
    # To get only date time
    date
    # To get only the date part 
-   date "+%y%m%d'
+   date "+%y%m%d"
    ```
 1. To get the calendar
    ```
@@ -391,17 +391,17 @@
    # To compress a directory
    tar -cvf dir.tar dir
    # To compress and zip a directory
-   tar -zcvf dir.tar dir
+   tar -zcvf dir.tar.gz dir
    # To uncompress a directory
    tar -xvf dir.tar
    # To uncompress a zip and tar directory
-   tar -zxvf dir.tar
+   tar -zxvf dir.tar.gz
    ```
 1. To find uniq lines in a file
    ```
    uniq
    # To find unique lines in a file
-   uniq sample.txt
+   uniq samplenumbers.txt
    ```
 1. To get various system information.
    ```
@@ -439,13 +439,13 @@
    # find everything in current directly and execute file on it
    find . -exec file{}\; 
    # To suppress warning in search
-   find / -type file -name sample.txt 2>/dev/null
+   find / -type file -name sampletext.txt 2>/dev/null
    ```
 1. To create an empty file
    ```
    touch
-   # To create a file sample.txt
-   touch sample.txt
+   # To create a file sampletext.txt
+   touch sampletext.txt
    ```
 1. It is used to show differences between two files.
    ```
@@ -529,6 +529,8 @@
 1. To check the status of remote computer
    ```
    ping
+   # To ping yahoo.com
+   ping www.yahoo.com
    ```
 1. To find the DNS name or IP address
    ```
