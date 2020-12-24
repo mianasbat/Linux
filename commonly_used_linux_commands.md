@@ -180,7 +180,11 @@
    # To see the history commands
    history
    # To clear the history
-   history -c
+   history -c; history -w
+   # To rerun a command from the history
+   !command_number
+   # To rerun the last executed command
+   !!
    ```
 1. To clear the screen
    ```
