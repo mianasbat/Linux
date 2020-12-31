@@ -575,9 +575,15 @@
    # To check the ip addresses of the system
    ifconfig | grep inet
    ```
-1. To download and check the code of webpage from commandline
+1. To download file and check the code of webpage from commandline
    ```
    curl
+   # To check the source code of a webpage 
+   curl https://mianasbat.github.io/web/
+   # To get header information
+   curl -i https://mianasbat.github.io/web/
+   # To download a file using curl
+   curl -o file.jpg https://url-of-the-resource
    ```
 
 
