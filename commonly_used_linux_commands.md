@@ -527,7 +527,7 @@
 1. To see information about the user.
    ```
    finger
-   # To see information about the current user
+   # To see information about the current user, login time etc
    finger $(whoami)
    ```
 1. To schedule any process.
@@ -590,7 +590,6 @@
 
 
 ## References:
-1. [Ref 1](https://www.oliverelliott.org/article/computing/ref_unix/)
-1. 
+1. [https://www.oliverelliott.org/article/computing/ref_unix/](https://www.oliverelliott.org/article/computing/ref_unix/)
 
 
