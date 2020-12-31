@@ -507,6 +507,8 @@
    groups
    # To see which groups the logged in user belong to
    groups
+   # To see which groups the user tom belongs to
+   sudo groups tom
    ```
 1. To see the logged in users on that computer.
    ```
