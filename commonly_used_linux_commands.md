@@ -587,7 +587,12 @@
    # To download a file using curl
    curl -o file.jpg https://url-of-the-resource
    ```
-
+1. How to find the kernel version of linux
+   ```
+   uname -r
+   uname -a
+   cat /proc/version
+   ```
 
 ## References:
 1. [https://www.oliverelliott.org/article/computing/ref_unix/](https://www.oliverelliott.org/article/computing/ref_unix/)
