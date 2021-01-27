@@ -593,6 +593,12 @@
    uname -a
    cat /proc/version
    ```
+1. To install, enable and start docker
+   ```
+   curl https://get.docker.com | sh \
+  && sudo systemctl start docker \
+  && sudo systemctl enable docker
+  ```
 
 ## References:
 1. [https://www.oliverelliott.org/article/computing/ref_unix/](https://www.oliverelliott.org/article/computing/ref_unix/)
